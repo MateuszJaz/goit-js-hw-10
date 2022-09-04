@@ -64,10 +64,10 @@ function createCountryInfo(country) {
     .map(({ name, capital, population, flags, languages }) => {
       return `<img src="${flags.svg}" alt="${
         name.official
-      }" width="100" height="80"><h1>${name.official}</h1> 
-      <p><span><b>Capital:</b> </span>${capital}</p>
-      <p><span><b>Population:</b> </span> ${population}</p>
-      <p><span><b>Languages:</b> </span> ${Object.values(languages)}</p>`;
+      }" width="100" height="80"><h1> ${name.official}</h1> 
+      <p><span><b>Capital:</b></span> ${capital}</p>
+      <p><span><b>Population:</b></span> ${population}</p>
+      <p><span><b>Languages:</b></span> ${Object.values(languages)}</p>`;
     })
     .join('');
   countryInfo.innerHTML = markupInfo;
